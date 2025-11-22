@@ -5,6 +5,7 @@ import './LightRays.css';
 export type RaysOrigin =
   | 'top-center'
   | 'top-left'
+  | 'top-center-offset'
   | 'top-right'
   | 'right'
   | 'left'
@@ -46,6 +47,8 @@ const getAnchorAndDir = (
       return { anchor: [0, -outside * h], dir: [0, 1] };
     case 'top-right':
       return { anchor: [w, -outside * h], dir: [0, 1] };
+    case "top-center-offset":
+      return { anchor: [0.5 * w + 0.2 * w, -outside * h], dir: [-0.2, 1] };
     case 'left':
       return { anchor: [-outside * w, 0.5 * h], dir: [1, 0] };
     case 'right':
