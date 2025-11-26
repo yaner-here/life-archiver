@@ -48,4 +48,6 @@ next-env.d.ts
 .env
 
 # prisma
+dev.db
+/prisma/migrations
 /prisma/src
