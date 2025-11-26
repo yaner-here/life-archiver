@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/prisma/*": ["./prisma/src/*"]
     },
     "types": [
       "./cloudflare-env.d.ts",
